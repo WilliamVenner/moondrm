@@ -1,0 +1,86 @@
+@import 'global.css';
+
+#categories {
+    float: left;
+    width: calc(25% - 10px);
+    border-bottom: 1px solid #000;
+}
+#settingspanel {
+    float: right;
+    width: 75%;
+    padding: 10px;
+    background-color: #e4e4e4;
+    border: 1px solid #000;
+}
+
+.category-header {
+    padding: 5px;
+    background-color: #e4e4e4;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    font-weight: bold;
+    text-align: center;
+}
+.category {
+    padding: 5px;
+    background-color: #e4e4e4;
+    border-top: 1px solid #000;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    -o-transition: background-color 0.5s;
+    -moz-transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.category:hover {
+    background-color: #f5f5f5;
+}
+.category.active {
+    border-left: 5px solid #000;
+    background-color: #e4e4e4 !important;
+}
+
+#content input[type='text'], #content input[type='password'], #content input[type='number'], #content input[type='email'] {
+	width: 100%;
+	-webkit-appearance: none !important;
+	-moz-appearance: none !important;
+	appearance: none !important;
+	border: 1px solid #000;
+	background-color: #fff;
+	color: #000;
+	outline: 0;
+	padding: 7.5px;
+	font-family: 'Roboto', sans-serif;
+}
+
+input[type='submit'] {
+    margin-top: 10px;
+}
+
+#divider {
+    display: none;
+}
+
+@media (max-width: 1460px) {
+    #categories {
+       width: 100%;
+       float: none;
+    }
+    #settingspanel {
+        width: 100%;
+        float: none;
+    }
+    #divider {
+        display: block;
+    }
+}
+@media (max-width: 700px) {
+    #footer_divider {
+        margin-bottom: 5px !important;
+    }
+}

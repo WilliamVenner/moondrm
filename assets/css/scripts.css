@@ -1,0 +1,26 @@
+@import 'global.css';
+
+.script {
+    width: 350px;
+    height: 178px;
+    padding: 10px;
+    background-color: #e6e6e6;
+    border: 1px solid #000;
+}
+.script .script-image {
+    width: 100%;
+}
+.script .script-title {
+    text-align: center;
+    padding-bottom: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.script-column {
+    float: none;
+    width: 380px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

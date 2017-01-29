@@ -1,0 +1,30 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+body {
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 50px;
+}
+
+#logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+#logo > img {
+    max-width: 450px;
+}
+
+@media (max-width: 920px) {
+    body {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+@media (max-width: 516px) {
+    #logo > img {
+        width: 100%;
+    }
+}

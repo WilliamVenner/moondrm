@@ -1,0 +1,83 @@
+@import 'global.css';
+@import 'https://fonts.googleapis.com/css?family=Secular+One';
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+}
+
+#arrow {
+    position: fixed;
+    bottom: 25px;
+    text-align: center;
+    width: 100%;
+    
+    transition: opacity 0.25s;
+    -webkit-transition: opacity 0.25s;
+    -o-transition: opacity 0.25s;
+    -moz-transition: opacity 0.25s;
+}
+#arrow.invisible {
+    opacity: 0;
+}
+#arrow > img {
+    width: 25px;
+    height: 25px;
+}
+
+a {
+    color: #fff;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.screen.full {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.screen.center {
+    display: inline-table;
+}
+.screen.center > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+#screen1 {
+    font-family: 'Secular One', sans-serif;
+    color: #fff;
+    font-size: 4vh;
+    background-image: url('../img/milkyway1080.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink {
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}

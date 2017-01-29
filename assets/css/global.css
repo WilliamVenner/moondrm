@@ -1,0 +1,175 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+@import 'lib/bootstrap-grid-only.min.css';
+
+body,html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    font-size: 14px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+}
+
+.center {
+    display: table;
+}
+.center.full {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.center > div {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.contentsize {
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.announcement {
+    padding: 16px;
+    padding-left: 45px;
+    margin-bottom: 20px;
+}
+.announcement.red {
+    background-color: rgb(255, 200, 200);
+    background-image: url(/assets/img/icons/exclamation.png);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    border: 1px solid rgb(255,0,0);
+}
+.announcement.green {
+    background-color: rgb(200, 255, 200);
+    background-image: url(/assets/img/icons/accept.png);
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    border: 1px solid rgb(0,255,0);
+}
+
+#content {
+    width: 100%;
+    padding-left: 25%;
+    padding-right: 25%;
+    min-height: calc(100% - 70px);
+    position: absolute;
+}
+
+@media (max-width: 1460px) {
+    .contentsize {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    #content {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+
+@media (max-width: 700px) {
+    .contentsize {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    #content {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+.button {
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    appearance: none !important;
+    outline: 0;
+    border: 0px;
+    background: 0;
+    font: inherit;
+    padding: 5px;
+    min-width: 100px;
+    cursor: pointer;
+    border-width: 1px;
+    border-style: solid;
+    transition: background-color 0.5s, border-color 0.5s;
+    -o-transition: background-color 0.5s, border-color 0.5s;
+    -moz-transition: background-color 0.5s, border-color 0.5s;
+    -webkit-transition: background-color 0.5s, border-color 0.5s;
+    text-align: center;
+}
+.button:active {
+    transition: none;
+    -o-transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+}
+
+.button.green {
+    background-color: #00b300;
+    border-color: #009a00;
+}
+.button.green:hover {
+    background-color: #009a00;
+}
+.button.green:active {
+    background-color: #008c00;
+}
+
+.button.red {
+    background-color: #af5353;
+    border-color: #7b1717;
+}
+.button.red:hover {
+    background-color: #fb7474;
+}
+.button.red:active {
+    background-color: #964848;
+}
+
+.button.blue {
+    background-color: #60aeff;
+    border-color: #457fbb;
+}
+.button.blue:hover {
+    background-color: #b2d8ff;
+}
+.button.blue:active {
+    background-color: #3c71a9;
+}
+
+.code {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+}
+
+iframe {
+    border: 0;
+}
+
+table:not(.customtable) {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+}
+table:not(.customtable) td, table:not(.customtable) th {
+    border: 1px solid #000;
+    padding: 5px;
+    word-wrap: break-word;
+}
+
+.form-error {
+    margin-bottom: 5px;
+    color: #8a0000;
+    font-weight: bold;
+}

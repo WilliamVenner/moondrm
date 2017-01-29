@@ -1,0 +1,34 @@
+@import 'global.css';
+@import 'lib/bootstrap-grid-only.min.css';
+@import 'scripts.css';
+
+#scripts-container .container-fluid:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+#user > iframe {
+    height: 624px;
+    width: 339px;
+    float: right;
+}
+#info {
+    float:left;
+    width:calc(100% - 349px);
+}
+
+h2 {
+    margin-top:0px;
+    display:block;
+    border-bottom:1px dotted #000;
+}
+
+#admin-buttons .button {
+    margin-bottom: 15px;
+}
+
+#hashes-table tr > th:nth-child(1), #hashes-table tr > th:nth-child(2), #hashes-table tr > th:nth-child(3) {
+    width: 75px;
+}
+#hashes-table {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,31 @@
+DirectoryIndex dashboard.php
+
+RewriteEngine on
+RewriteRule ^favicon.ico$ https://moondrm.com/favicon.ico
+RewriteRule ^assets/(.*)$ https://moondrm.com/assets/$1
+
+RewriteRule ^logout$ /logout/ [L,R]
+RewriteRule ^logout/$ logout.php [L]
+
+RewriteRule ^login$ /login/ [L,R]
+RewriteRule ^login/$ login.php [L]
+
+RewriteRule ^login/email$ /login/email/ [L,R]
+RewriteRule ^login/email/$ loginemail.php [L]
+
+RewriteRule ^settings$ /settings/ [L,R]
+RewriteRule ^settings/(.*)$ settings.php?category=$1 [L]
+
+RewriteRule ^documentation$ /documentation/ [L,R]
+RewriteRule ^documentation/(.*)$ documentation.php [L]
+
+RewriteRule ^users$ / [L,R]
+RewriteRule ^users/$ / [L,R]
+RewriteRule ^users/(.+)$ user.php?user=$1 [L]
+
+RewriteRule ^scripts$ /scripts/ [L,R]
+RewriteRule ^scripts/$ scripts.php [L]
+RewriteRule ^scripts/(.+)$ scripts.php?script_id=$1 [L]
+
+RewriteRule ^buy$ /buy/ [L,R]
+RewriteRule ^buy/$ buy.php [L]

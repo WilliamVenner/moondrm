@@ -1,0 +1,21 @@
+Options -Indexes
+
+RewriteEngine on
+
+RewriteRule ^legal/terms$ /legal/terms/ [L,R]
+RewriteRule ^legal/terms/$ terms.html [L]
+
+RewriteRule ^legal/privacy$ /legal/privacy/ [L,R]
+RewriteRule ^legal/privacy/$ privacy.html [L]
+
+RewriteRule ^legal/cookies$ /legal/cookies/ [L,R]
+RewriteRule ^legal/cookies/$ cookies.html [L]
+
+RewriteRule ^features$ /features/ [L,R]
+RewriteRule ^features/$ features.html [L]
+
+RewriteCond %{HTTP_HOST} !^api\.moondrm\.com$
+RewriteRule ^api/?(.*)$ https://api.moondrm.com/$1 [L,R]
+
+RewriteCond %{HTTP_HOST} !^panel\.moondrm\.com$
+RewriteRule ^panel/?(.*)$ https://panel.moondrm.com/$1 [L,R]

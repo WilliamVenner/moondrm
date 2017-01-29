@@ -1,0 +1,1 @@
+<?php header("LOCATION: " . $_GET["redirect"]); ?>

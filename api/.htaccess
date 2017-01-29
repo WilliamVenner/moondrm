@@ -1,0 +1,14 @@
+RewriteEngine on
+RewriteRule ^favicon.ico$ https://moondrm.com/favicon.ico
+
+RewriteRule ^webhook$ /webhook/ [R,L]
+RewriteRule ^webhook/ webhook.php [L]
+
+RewriteRule ^loader$ /loader/ [R,L]
+RewriteRule ^loader/ loader.php [L]
+
+RewriteRule ^caller$ /caller/ [R,L]
+RewriteRule ^caller/ caller.php [L]
+
+RewriteRule ^latestversion$ /latestversion/ [R,L]
+RewriteRule ^latestversion/ latestversion.php [L]

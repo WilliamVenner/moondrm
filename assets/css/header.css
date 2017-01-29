@@ -1,0 +1,61 @@
+#header {
+    background-color: rgb(26,26,26);
+    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 70px;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+#header a {
+    border-bottom: none;
+}
+#header div {
+    display: inline-block;
+}
+#header img {
+    width: 50px;
+}
+
+#header #header-expand {
+    float: right;
+    margin-left: 15px;
+    width: 50px;
+    height: 50px;
+    background-size: 100% 100%;
+    background-image: url(../img/menu.png);
+    position: relative;
+}
+#header #header-expand > div {
+    cursor: pointer;
+    background-image: url(/assets/img/menu_fill.png);
+    background-size: 100% 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+    
+    transition: opacity 0.5s;
+    -webkit-transition: opacity 0.5s;
+    -o-transition: opacity 0.5s;
+    -moz-transition: opacity 0.5s;
+}
+#header #header-expand > div:hover {
+    opacity: 1;
+}
+#header #header-expand > .lock {
+    opacity: 1 !important;
+}
+
+#header #header-logo {
+    float: left;
+}
+#header #header-avatar {
+    float: right;
+    margin-left: 15px;
+}
